@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './FoodItem.module.css'
 
 const FoodItem = ({food}) => {
   return (
