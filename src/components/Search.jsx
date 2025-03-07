@@ -9,10 +9,15 @@ const Search = () => {
   const [query, setQuery] = useState("Pizza");
 //   todo: syntax of the useEffect Hook
   useEffect(()=>{
-    const fetchFood = ()=>{
-       const res =  fetch(`${url}?query=${query}&apiKey=${API_KEY}`)
-       const data = res.json()
+
+    const fetchFood = async () => {
+       const res = await fetch(`${url}?query=${query}&apiKey=${API_KEY}`);
+       const data = await res.json();
+       console.log(data);
     }
+
+
+    fetchFood()
   },[query])
   return (
     <div>
