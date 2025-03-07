@@ -2,11 +2,11 @@ import { useState } from 'react'
 import Search from './components/Search'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [foodData, setFoodData] = useState([])
 
   return (
     <div>
-      <Search />
+      <Search foodData={foodData} setFoodData={setFoodData}/>
     </div>
   )
 }
