@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Search = () => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("Pizza");
+  useEffect(()=>{},[])
   return (
     <div>
       <input
