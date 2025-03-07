@@ -7,6 +7,9 @@ function App() {
   return (
     <div>
       <Search foodData={foodData} setFoodData={setFoodData}/>
+      {foodData.map((food) => (
+        <h1 key={food.title}>{food.title}</h1>
+      ))}
     </div>
   )
 }
