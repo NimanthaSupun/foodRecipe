@@ -7,7 +7,8 @@ const Search = () => {
     const demo = ()=>{
         console.log("demo function executed");
     }
-  },[])
+    demo()
+  },[query])
   return (
     <div>
       <input
