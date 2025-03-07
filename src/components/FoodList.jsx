@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FoodList = () => {
+const FoodList = ({foodData}) => {
   return (
     <div>
          {foodData.map((food) => (
