@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Search = () => {
+  const [query, setQuery] = useState("");
   return (
     <div>
-        <input type="text" />
+      <input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;
