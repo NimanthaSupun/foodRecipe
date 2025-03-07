@@ -13,7 +13,7 @@ const Search = () => {
     const fetchFood = async () => {
        const res = await fetch(`${url}?query=${query}&apiKey=${API_KEY}`);
        const data = await res.json();
-       console.log(data);
+       console.log(data.result);
     }
 
 
