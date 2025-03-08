@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import styles from './Search.module.css'
 
 const url = "https://api.spoonacular.com/recipes/complexSearch"
-const API_KEY = "234b36f81ee74192a8f214293f825bca";
+// const API_KEY = "234b36f81ee74192a8f214293f825bca";
 
 
 
