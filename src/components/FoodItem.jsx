@@ -3,10 +3,13 @@ import styles from './FoodItem.module.css'
 
 const FoodItem = ({food}) => {
   return (
-    <div>
-        <img src={food.image} alt="" srcset="" />
-         <h1>{food.title}</h1>
-         <button>View Recipe</button>
+    <div className={styles.itemContainer}>
+        <img className={styles.itemImage} src={food.image} alt="" srcset="" />
+         <div className={styles.itemContent}></div>
+         <p className={styles.itemName}>{food.title}</p>
+         <div className={styles.buttonContainer}>
+         <button className={styles.itemButton} >View Recipe</button>
+         </div>
     </div>
   )
 }
